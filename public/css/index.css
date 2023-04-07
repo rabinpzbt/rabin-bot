@@ -270,19 +270,20 @@ header {
 	.nav a[href][aria-current="page"] {
 		text-decoration: underline;
 	}
+
+
 }
 
 .mainText{
 	width: 100%;
-	font-size: 3em;
 	word-spacing: -0.15em;
-	font-size: 3.5em;
+	font-size: 3em;
 	text-align: justify;
 	user-select: none;
 }
 
 .grayed{
-	line-height: 0.9em;
+	line-height: 1em;
 	font-weight: 800;
 	color: #181818;
 }
@@ -293,6 +294,28 @@ header {
 	z-index: 100;
 }
 
+@media (max-device-width: 719px) {
+.mainText{
+	width: 100%;
+	word-spacing: -0.15em;
+	font-size: 1em;
+	text-align: justify;
+	user-select: none;
+}
+
+.grayed{
+	line-height: 1em;
+	font-weight: 800;
+	color: #202020;
+}
+
+.focus{
+	color: white;
+	font-weight: 900;
+	z-index: 100;
+}
+
+}
 /* Posts list */
 .postlist {
 	list-style: none;
