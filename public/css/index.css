@@ -36,7 +36,6 @@
 	}
 }
 
-
 /* Global stylesheet */
 * {
 	box-sizing: border-box;
@@ -55,7 +54,7 @@ html {
 }
 body {
 	margin-top: 1em;
-	max-width: 60em;
+	max-width: 70em;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
