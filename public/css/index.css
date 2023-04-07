@@ -163,7 +163,7 @@ header {
 	padding: 1em;
 }
 .home-link {
-	font-size: 2em; /* 16px /16 */
+	font-size: 1.5em; /* 16px /16 */
 	font-weight: 900;
 }
 .home-link:link:not(:hover) {
@@ -177,7 +177,7 @@ header {
 	list-style: none;
 }
 .nav-item {
-	font-size: 1.3em; /* 16px /16 */
+	font-size: 1em; /* 16px /16 */
 	margin-right: 1em;
 }
 .nav-item a[href]:not(:hover) {
@@ -185,9 +185,10 @@ header {
 }
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
-	font-style: italic;
-	font-weight: 700;
+	font-weight: 900;
 }
+
+
 /*
 .container {
 	display: flex;
@@ -271,6 +272,26 @@ header {
 	}
 }
 
+.mainText{
+	width: 100%;
+	font-size: 3em;
+	word-spacing: -0.15em;
+	font-size: 3.5em;
+	text-align: justify;
+	user-select: none;
+}
+
+.grayed{
+	line-height: 0.9em;
+	font-weight: 800;
+	color: #181818;
+}
+
+.focus{
+	color: white;
+	font-weight: 900;
+	z-index: 100;
+}
 
 /* Posts list */
 .postlist {
@@ -292,6 +313,7 @@ header {
 	line-height: 100%;
 	text-align: right;
 	margin-left: -1.5rem;
+	
 }
 .postlist-date,
 .postlist-item:before {
