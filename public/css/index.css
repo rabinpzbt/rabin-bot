@@ -29,9 +29,10 @@
 		/* --text-color is assigned to --color-gray-_ above */
 		--text-color-link: #1493fb;
 		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link-visited: #5b7ceb;
 
-		--background-color: #15202b;
+		--background-color: #141414;
+		--background-color--two: #303030;
 	}
 }
 
@@ -53,7 +54,8 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 40em;
+	margin-top: 1em;
+	max-width: 60em;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -96,9 +98,10 @@ main :first-child {
 	margin-top: 0;
 }
 
+
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
+	/* border-bottom: 2px dashed var(--color-gray-20);*/
+} 
 header:after {
 	content: "";
 	display: table;
@@ -142,7 +145,55 @@ code {
 	word-break: break-all;
 }
 
+
+.container {
+	display: flex;
+	flex-direction: row;
+  }
+/*
+.info{
+	margin: 1.1em;
+	font-size: 1em;
+	text-align: justify;
+}*/
+  
 /* Header */
+header {
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 2em; /* 16px /16 */
+	font-weight: 900;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	padding: 0;
+	margin-bottom: 4em;
+	list-style: none;
+}
+.nav-item {
+	font-size: 1.3em; /* 16px /16 */
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: 700;
+}
+/*
+.container {
+	display: flex;
+	flex-direction: column;
+  }
+  
 header {
 	display: flex;
 	gap: 1em .5em;
@@ -151,15 +202,15 @@ header {
 	padding: 1em;
 }
 .home-link {
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
+	font-size: 1.5em; 
+	font-weight: 900;
 	margin-right: 2em;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
 
-/* Nav */
+
 .nav {
 	display: flex;
 	padding: 0;
@@ -167,7 +218,7 @@ header {
 	list-style: none;
 }
 .nav-item {
-	display: inline-block;
+	display:inline-block;
 	margin-right: 1em;
 }
 .nav-item a[href]:not(:hover) {
@@ -176,6 +227,50 @@ header {
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
 }
+
+*/
+
+@media (max-device-width: 719px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	  }
+
+	  header {
+		display: flex;
+		gap: 0.5em .5em;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 1em;
+	}
+	.home-link {
+		font-size: 2em; 
+		font-weight: 900;
+		margin-right: 2em;
+	}
+	.home-link:link:not(:hover) {
+		text-decoration: none;
+	}
+	
+	.nav {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.nav-item {
+		display:inline-block;
+		margin-right: 1em;
+		font-size: 1.1em; 
+	}
+	.nav-item a[href]:not(:hover) {
+		text-decoration: none;
+	}
+	.nav a[href][aria-current="page"] {
+		text-decoration: underline;
+	}
+}
+
 
 /* Posts list */
 .postlist {
@@ -188,7 +283,7 @@ header {
 	flex-wrap: wrap;
 	align-items: baseline;
 	counter-increment: start-from -1;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 .postlist-item:before {
 	display: inline-block;
@@ -200,17 +295,18 @@ header {
 }
 .postlist-date,
 .postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
+	font-size: 0.7525em; /* 13px /16 */
 	color: var(--color-gray-90);
 }
 .postlist-date {
 	word-spacing: -0.5px;
+	padding-left: 1.25em;
 }
 .postlist-link {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: .25em;
+	padding-left: 1.25em;
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
@@ -222,14 +318,25 @@ header {
 
 /* Tags */
 .post-tag {
+	background-color: var(--background-color--two);
+	border-radius: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1em;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	text-transform: capitalize;
-	font-style: italic;
+	text-decoration: none;
+	/* text-transform: capitalize; 
+	font-style: italic;*/
 }
 .postlist-item > .post-tag {
 	align-self: center;
+}
+.post-tag.tagList{
+	background-color: var(--background-color);
+	padding-left: 0em;
+	padding-right: 0em;
 }
 
 /* Tags list */
@@ -243,6 +350,7 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+	background-color: none;
 }
 
 /* Direct Links / Markdown Headers */

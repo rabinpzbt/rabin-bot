@@ -7,7 +7,13 @@ numberOfLatestPostsToShow: 3
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h1>  </h1>
+<a href="https://ibb.co/ngv4NWQ"><img src="https://i.ibb.co/4mGCnQ4/337198227-967021374646078-5183966479923724873-n.jpg" 
+alt="337198227-967021374646078-5183966479923724873-n" border="0"  width="100%" style="pointer-events: none; cursor: default"></a>
+
+<p class="postlist-date">Photo by <a href="https://www.facebook.com/jooolyooos">Julius Renomeron Jr. </a></p>
+<h3>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h3>
+
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -15,9 +21,13 @@ numberOfLatestPostsToShow: 3
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+<p>Read {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} <a href="/blog/">here</a>.</p>
 {% endif %}
 
+<footer>
+</br></br></br>Contact me
+<b><a href="mailto:rabinbot@gmail.com?subject=Hello!">here<a></b>.
+</footer>
 {# List every content page in the project #}
 {#
 <ul>
