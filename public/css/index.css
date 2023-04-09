@@ -177,17 +177,15 @@ code {
 	align-items: stretch; 
 }
 
-
-
   @media (min-width: 768px) and (max-width:819px){
 	.container {
 		display: flex;
 		flex-direction: row;
 		position: fixed;
 		top: 0;
-		left: 20%;
+		left: 2%;
 		bottom: 0;
-		right: 20%;
+		right: 2%;
 		align-items: stretch; 
 	  }
 }
@@ -365,7 +363,7 @@ header {
 	}
 }
 
-@media (min-device-width: 768px){
+@media (min-device-width: 769px){
 	.hideDivHome{
 		display: none;
 	}
