@@ -430,22 +430,12 @@ header {
 .mainText{
 	width: 100%;
 	word-spacing: -0.15em;
-	font-size: 3em;
+	font-size: 3.5em;
 	text-align: justify;
 	user-select: none;
-}
-
-.grayed{
-	line-height: 1em;
-	font-weight: 800;
-	color: #181818;
-}
-
-.focus{
-	color: white;
 	font-weight: 900;
-	z-index: 100;
 }
+
 
 @media (max-device-width: 719px) {
 .mainText{
@@ -467,51 +457,6 @@ header {
 	font-weight: 900;
 	z-index: 100;
 }
-
-.postlist {
-	list-style: none;
-	padding: 0;
-	padding-left: 1.5rem;
-}
-.postlist-item {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	counter-increment: start-from -1;
-	margin-bottom: 0.5em;
-}
-.postlist-item:before {
-	display: inline-block;
-	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
-	line-height: 100%;
-	text-align: right;
-	margin-left: -1.5rem;
-	
-}
-.postlist-date,
-.postlist-item:before {
-	font-size: 0.7525em; /* 13px /16 */
-	color: var(--color-gray-90);
-}
-.postlist-date {
-	word-spacing: -0.5px;
-	padding-left: 1.25em;
-}
-.postlist-link {
-	font-size: 1em; /* 19px /16 */
-	font-weight: 700;
-	flex-basis: calc(100% - 1.5rem);
-	padding-left: 1.25em;
-	padding-right: .5em;
-	text-underline-position: from-font;
-	text-underline-offset: 0;
-	text-decoration-thickness: 1px;
-}
-.postlist-item-active .postlist-link {
-	font-weight: bold;
-}
-
 }
 
 /* Tags */
@@ -548,8 +493,8 @@ header {
 	flex-wrap: wrap;
 	align-items: baseline;
 	counter-increment: start-from -1;
-	margin-bottom: 0.5em;
-	font-size: 0.9em;
+	margin-bottom: 0.2em;
+	font-size: 1.05em;
 }
 .postlist-item:before {
 	display: inline-block;
@@ -566,15 +511,14 @@ header {
 	color: var(--color-gray-90);
 }
 .postlist-date {
-	word-spacing: -0.5px;
-	padding-left: 1em;
+	word-spacing: -.05em;
 }
 .postlist-link {
 	font-size: 1em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: 1.25em;
-	padding-right: .5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
