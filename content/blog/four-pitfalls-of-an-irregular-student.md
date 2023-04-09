@@ -5,7 +5,8 @@ date: 2019-07-03
 tags:
   - student-life
 ---
-(Site is currently undergoing revisions) Originally published on: https://tomasinoweb.org/blogs/the-four-pitfalls-of-being-an-irregular-student/
+This article was originally published on **TomasinoWeb's** website.
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/TWBlogs?src=hash&amp;ref_src=twsrc%5Etfw">#TWBlogs</a> Did you miss this? Irregular students (of the University) unite! 😊<a href="https://t.co/UNGu7xHOe3">https://t.co/UNGu7xHOe3</a></p>&mdash; TomasinoWeb (@TomasinoWeb) <a href="https://twitter.com/TomasinoWeb/status/1146226128601800704?ref_src=twsrc%5Etfw">July 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **“P*ta, bagsak nanaman ako.”**
 
@@ -93,3 +94,5 @@ Irregular students do not deserve persecution. Our failing grades shouldn’t be
 
 Don’t let those singkos define you--*because you define you.*
 
+-----------------
+*Rabin Bote was the 12th president of **TomasinoWeb**, the premier digital media organization of the University of Santo Tomas.*
