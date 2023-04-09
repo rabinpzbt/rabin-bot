@@ -3,7 +3,8 @@ title: To lose is to gain
 description: 
 date: 2020-06-17
 tags:
-  - slice-of-life
+  - student-life
+  - slice of life
 ---
 Computer science students are expected to finish their undergraduate degree in four years—an expectation I failed to meet. However, it did not stop me from crossing the Arch of the Centuries in last year’s Baccalaureate Mass.
 
