@@ -3,7 +3,7 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 3
+numberOfLatestPostsToShow: 2
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
@@ -18,17 +18,18 @@ alt="337198227-967021374646078-5183966479923724873-n" border="0"  width="100%" s
 
 
 <p class="postlist-date">Photo by <a href="https://www.facebook.com/jooolyooos">Julius Renomeron Jr. </a></p>
-<h3>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h3>
 
+<div class="hideDivHome">
+	<h3>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h3>
+	{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+	{% set postslistCounter = postsCount %}
+	{% include "postslist.njk" %}
+	{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+	{% if morePosts > 0 %}
+	<p>Read {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} <a href="/blog/">here</a>.</p>
+	{% endif %}
+</div>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
-
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>Read {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} <a href="/blog/">here</a>.</p>
-{% endif %}
 
 <footer>
 </br></br></br>Contact me

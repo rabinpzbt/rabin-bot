@@ -162,7 +162,7 @@ header {
 	padding: 1em;
 }
 .home-link {
-	font-size: 1.5em; /* 16px /16 */
+	font-size: 3.5em; /* 16px /16 */
 	font-weight: 900;
 }
 .home-link:link:not(:hover) {
@@ -172,12 +172,15 @@ header {
 /* Nav */
 .nav {
 	padding: 0;
-	margin-bottom: 4em;
+	margin-bottom: 0.5em;
 	list-style: none;
+	
 }
 .nav-item {
 	font-size: 1em; /* 16px /16 */
-	margin-right: 1em;
+	margin-right: 0.5em;
+	float: left;
+	
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
@@ -270,8 +273,17 @@ header {
 		text-decoration: underline;
 	}
 
-
+	.hideDiv{
+		display: none;
+	}
 }
+
+@media (min-device-width: 720px){
+	.hideDivHome{
+		display: none;
+	}
+}
+
 
 .mainText{
 	width: 100%;
@@ -314,8 +326,6 @@ header {
 	z-index: 100;
 }
 
-}
-/* Posts list */
 .postlist {
 	list-style: none;
 	padding: 0;
@@ -347,7 +357,7 @@ header {
 	padding-left: 1.25em;
 }
 .postlist-link {
-	font-size: 1.1875em; /* 19px /16 */
+	font-size: 1em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
 	padding-left: 1.25em;
@@ -358,6 +368,8 @@ header {
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
+}
+
 }
 
 /* Tags */
@@ -382,6 +394,53 @@ header {
 	padding-left: 0em;
 	padding-right: 0em;
 }
+
+/* Posts list not media query*/
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 0.5em;
+	font-size: 0.9em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+	
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.7525em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+	padding-left: 1.15em;
+}
+.postlist-link {
+	font-size: 1em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: 1.25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
 
 /* Tags list */
 .post-metadata {

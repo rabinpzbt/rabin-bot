@@ -1,6 +1,9 @@
 ---
 layout: layouts/base.njk
+numberOfLatestPostsToShow: 2
 ---
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 {# Only include the syntax highlighter CSS on blog posts #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
@@ -13,6 +16,7 @@ layout: layouts/base.njk
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %} {% endif %}</li>
 	{%- endfor %}
 </ul>
+
 
 {{ content | safe }}
 

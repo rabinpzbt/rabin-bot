@@ -4,7 +4,11 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Tags
   order: 3
+numberOfLatestPostsToShow: 2
 ---
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+
 <h1>Tags</h1>
 
 <ul>

@@ -1,3 +1,8 @@
+---
+numberOfLatestPostsToShow: 3
+---
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <!doctype html>
 <html lang="{{ metadata.language }}">
 	<head>
@@ -48,15 +53,24 @@
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
 				{%- endfor %}
 				</ul>
+				<div class="hideDiv">
+					</br>
+					<h3>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h3>
+					{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+					{% set postslistCounter = postsCount %}
+					{% include "postslist.njk" %}
+					{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+					{% if morePosts > 0 %}
+					<p>Read {{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} <a href="/blog/">here</a>.</p>
+					{% endif %}
+				</div>
+				
 			</nav>
 		</header>
 		<!-- <div class="info">
 			<p> Rabin graduated with a degree in computer science in UST. He is currently</br>taking up law in the same university.</p>
 		</div> -->
 			</div>
-
-		
-
 		<main id="skip">
 			{{ content | safe }}
 		</main>
