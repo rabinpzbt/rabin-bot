@@ -170,12 +170,57 @@ code {
 	flex-direction: row;
 	position: fixed;
 	top: 0;
-	left: 10%;
+	left: 20%;
 	bottom: 0;
-	right: 10%;
+	right: 20%;
 	align-items: stretch; 
   }
 
+@media (min-width: 1921px){
+	.container {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		left: 25%;
+		bottom: 0;
+		right: 25%;
+		align-items: stretch; 
+	  }
+}
+/* iPad 1, 2, Mini and Air */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.container {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		left: 2%;
+		bottom: 0;
+		right: 2%;
+		align-items: stretch; 
+	  }
+}
+
+/* iPad 3, 4 and Pro 9.7" */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.container {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		left: 2%;
+		bottom: 0;
+		right: 2%;
+		align-items: stretch; 
+	  }
+}
 
 /*
 .info{
