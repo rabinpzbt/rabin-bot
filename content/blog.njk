@@ -1,10 +1,18 @@
 ---
-layout: layouts/home.njk
+layout: layouts/home_alt.njk
 eleventyNavigation:
   key: Blog
   order: 2
+numberOfLatestPostsToShow: 0
 ---
-<h1>Blog</h1>
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
+
+<h1>Blog</h1>
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p>Article count: {{ morePosts }} {% if morePosts != 1 %}{% endif %}</p>
+{% endif %}
