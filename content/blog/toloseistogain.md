@@ -6,6 +6,9 @@ tags:
   - student-life
   - slice of life
 ---
+### This article was originally published on **TomasinoWeb's** website.
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/TWOpinion?src=hash&amp;ref_src=twsrc%5Etfw">#TWOpinion</a> &quot;I do not aspire to be a walking accolade—I want to be part of the collective that changes the society for its betterment. TomasinoWeb is a part of that collective, and I hope they continue in doing so.&quot;<a href="https://t.co/qr4NsSgxFu">https://t.co/qr4NsSgxFu</a></p>&mdash; TomasinoWeb (@TomasinoWeb) <a href="https://twitter.com/TomasinoWeb/status/1273235318913687552?ref_src=twsrc%5Etfw">June 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Computer science students are expected to finish their undergraduate degree in four years—an expectation I failed to meet. However, it did not stop me from crossing the Arch of the Centuries in last year’s Baccalaureate Mass.
 
 Yes, you’ve heard it right. I crossed the monumental arch in a non-graduating year.
@@ -22,6 +25,9 @@ Halfway through my journey at the University, my sanity began to collapse. I com
 
 I started to question my position on the campus. Student leadership began to inflict more harm than good. Some people took pleasure in lambasting my character and personality. I was called irrational due to the progressive beliefs I uphold. I was called a “novice” who wanted an iron grip in the highest room. Furthermore, holding a leadership position as an irregular student had my opinions debunked right away.
 
+<img src="https://i.ibb.co/Zc8Gt35/121556136-3634805743218151-410534738154275788-n.jpg" alt="121556136-3634805743218151-410534738154275788-n" alt="me" width=100%>
+
+##### *Rabin Bote, outgoing president for PY 2019-2020*
 In a room full of academically decorated student achievers and leaders, how do I even fare?
 Despite all of these, I persisted to serve and survive. I realized that my struggles as a student are maneuvered by an invisible wheel steered by systemic oppression. If I fail to challenge dominant narratives, then what purpose would I even serve? I do not aspire to be a walking accolade—I want to be part of the collective that changes society for its betterment. ***TomasinoWeb*** is a part of that collective, and I hope they continue in doing so.
 
