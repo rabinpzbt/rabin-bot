@@ -3,7 +3,7 @@
 	--color-message-box: #ffc;
 
 	display: block;
-	font-size: 1.5em;
+	font-size: 1em;
 	/*padding: 1em 0.625em; /* 16px 10px /16 */ 
 }
 .message-box ol {
