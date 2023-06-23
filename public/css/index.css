@@ -514,9 +514,9 @@ header {
 .postlist-link {
 	font-size: 1em; /* 19px /16 */
 	font-weight: 700;
-	/*flex-basis: calc(100% - 1.5rem);*/
-	padding-left: -0.5em;
-	padding-right: 0.5em;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: 0.3em;
+	padding-right: 0.3em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
