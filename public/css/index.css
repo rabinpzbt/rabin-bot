@@ -13,7 +13,7 @@
 
 	--background-color: #fff;
 
-	--text-color: var(--color-gray-90);
+	--text-color: #cfcfcf;
 	--text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
@@ -78,6 +78,7 @@ p:last-child {
 }
 p {
 	line-height: 1.5;
+	letter-spacing: 0.1px;
 }
 
 li {
@@ -99,9 +100,12 @@ main {
 	padding: 1rem;
 }
 main :first-child {
-	margin-top: 0;
+	margin-top: 10px;
 }
 
+h1{
+
+}
 
 header {
 	/* border-bottom: 2px dashed var(--color-gray-20);*/
@@ -167,7 +171,7 @@ code {
 .container {
 	display: flex;
 	flex-direction: row;
-	position: fixed;
+	/*position: fixed; */
 	top: 0;
 	left: 2%;
 	bottom: 0;
@@ -179,7 +183,7 @@ code {
 	.container {
 		display: flex;
 		flex-direction: row;
-		position: fixed;
+		/*position: fixed; */
 		top: 0;
 		left: 2%;
 		bottom: 0;
@@ -192,7 +196,7 @@ code {
 	.container {
 		display: flex;
 		flex-direction: row;
-		position: fixed;
+		/*position: fixed; */
 		top: 0;
 		left: 5%;
 		bottom: 0;
@@ -205,7 +209,7 @@ code {
 	.container {
 		display: flex;
 		flex-direction: row;
-		position: fixed;
+		/*position: fixed; */
 		top: 0;
 		left: 20%;
 		bottom: 0;
@@ -219,7 +223,7 @@ code {
 	.container {
 		display: flex;
 		flex-direction: row;
-		position: fixed;
+		/*position: fixed; */
 		top: 0;
 		left: 25%;
 		bottom: 0;
@@ -241,6 +245,7 @@ header {
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
+	
 }
 
 /* Nav */
@@ -268,7 +273,7 @@ header {
 	.container {
 		display: flex;
 		flex-direction: column;
-		position: fixed;
+		/*position: fixed; */
 		top: 1%;
 		left: 1%;
 		bottom: 1%;
@@ -521,3 +526,50 @@ h2 + .header-anchor {
 	font-weight: 900;
 	line-height: 0.95em;
 }
+
+.aboutLinks{
+	font-weight: 800;
+	color: white;
+}
+
+.aboutLinks:link{
+	text-decoration: none;
+}
+
+.aboutContainer {
+	margin: 0 auto;
+	max-width: 980px;
+	min-width: 320px;
+  }
+
+  .rowContainer { 
+	display:flex;
+	flex-wrap: wrap;
+  }
+
+  .columnContainer {
+	text-align: center;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 1;
+	margin: 10px;
+	border: 1px solid #dedede;
+	padding: 10px;
+	
+  }
+
+  .col-3 {
+	max-width: calc(100% / 15 * 3);
+  }
+
+  @media screen and (max-width: 768px) {
+	.aboutContainer {
+	  overflow: auto;
+	}
+	 .columnContainer {
+	   min-width: 100%;
+	   width: 100%;
+	   margin: 10px 0;
+	}
+  }
+  
