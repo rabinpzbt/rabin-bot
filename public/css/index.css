@@ -13,7 +13,7 @@
 
 	--background-color: #fff;
 
-	--text-color: #b7ff00;
+	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
@@ -516,7 +516,7 @@ h2 + .header-anchor {
 }
 
 .postTitle{
-	font-size: 3.5em;
+	font-size: 3.3em;
 	word-spacing: -0.04em;
 	font-weight: 900;
 	line-height: 0.95em;
