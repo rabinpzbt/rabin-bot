@@ -2,8 +2,8 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: master
-media_folder: "content/images"
-public_folder: "content/images"
+media_folder: "_site/img"
+public_folder: "_site/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
@@ -11,7 +11,7 @@ local_backend: true
 collections:
   - label: "Blog"
     name: "blog"
-    folder: "/content/blog"
+    folder: "_site/blog"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
