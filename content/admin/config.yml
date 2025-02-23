@@ -11,7 +11,7 @@ local_backend: true
 collections:
   - label: "Blog"
     name: "blog"
-    folder: "content/blog"
+    folder: "/content/blog"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
