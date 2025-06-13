@@ -23,5 +23,5 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["Tags", "created", "test", "config.yml"]
+        options: ["Tags", "student life", "slice of life", "video games", "review"]
   
