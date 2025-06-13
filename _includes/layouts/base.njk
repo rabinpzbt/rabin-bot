@@ -83,5 +83,16 @@ numberOfLatestPostsToShow: 3
 		<footer></footer>
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+		<script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", (user) => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+				});
+			}
+			});
+		}
+		</script>
 	</body>
 </html>
