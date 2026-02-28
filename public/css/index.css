@@ -62,7 +62,6 @@ body {
 	max-width: 65em;
 }
 
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -78,11 +77,12 @@ p:last-child {
 }
 p {
 	line-height: 1.5;
-	letter-spacing: 0.1px;
+	font-size: 1.25em;
 }
 
 li {
 	line-height: 1.5;
+	font-size: 1.25em;
 }
 
 a[href] {
