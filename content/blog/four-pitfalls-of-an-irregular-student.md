@@ -1,6 +1,6 @@
 ---
 title: The four pitfalls of an irregular student
-description: 
+description: test test
 date: 2019-07-03
 tags:
   - student-life
