@@ -8,6 +8,9 @@ numberOfLatestPostsToShow: 2
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <h1 class="postTitle" id="backToTop">{{ title }}</h1>
+{%- if description %}
+<p class="post-description">{{ description }}</p>
+{%- endif %}
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>

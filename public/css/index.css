@@ -527,6 +527,12 @@ h2 + .header-anchor {
 	line-height: 0.95em;
 }
 
+.post-description {
+	font-style: italic;
+	color: var(--color-gray-90);
+	margin: 0.5em 0 1em;
+}
+
 .aboutLinks{
 	font-weight: 800;
 	color: white;
